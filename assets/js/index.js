@@ -17,7 +17,7 @@ function getUserInfo() {
 };
 const renderAvatar = (data) => {
   let name = data.nickname || data.username;
-  console.log(name);
+ 
   $("#welcome").html("欢迎" + name);
   if (data.user_pic !== null) {
     $(".layui-nav-img").attr("src", data.user_pic);
